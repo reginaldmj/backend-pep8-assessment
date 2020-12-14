@@ -1,6 +1,8 @@
 # SNAKES GAME
-# Use ARROW KEYS to play, SPACE BAR for pausing/resuming and Esc Key for exiting
-# Code courtesy of Sanchit Gangwar: https://gist.github.com/sanchitgangwar/2158089
+# Use ARROW KEYS to play, SPACE BAR for
+# pausing/resuming and Esc Key for exiting
+# Code courtesy of Sanchit Gangwar:
+# https://gist.github.com/sanchitgangwar/2158089
 
 import curses
 from curses import KEY_RIGHT, KEY_LEFT, KEY_UP, KEY_DOWN
@@ -15,11 +17,14 @@ curses.curs_set(0)
 win.border(0)
 win.nodelay(1)
 
-key = KEY_RIGHT                                                    # Initializing values
+# Initializing value
+key = KEY_RIGHT
 score = 0
 
-snake = [[4,10], [4,9], [4,8]]                                     # Initial snake co-ordinates
-food = [10,20]                                                     # First food co-ordinates
+# Initial snake coordinates
+snake = [[4,10], [4,9], [4,8]]
+# First food coordinates
+food = [10,20]
 
 win.addch(food[0], food[1], '*')                                   # Prints the food
 
